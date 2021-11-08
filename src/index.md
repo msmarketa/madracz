@@ -19,4 +19,25 @@ cardThree:
     content: "Zajišťujeme přepravy nákladů i osob, vytěžování vozidel a spediční služby po celé Evropě."
     linkText: "Více"
     linkUrl: "#"
+quality:
+    headline: "Kvalita od roku 1994"
+    item1: "Včasnost"
+    item2: "Přesnost"
+    item3: "Kvalita"
+    item4: "Cena"
+    linkText: "Více"
+    linkUrl: "/kvalita/"
+customers:
+    headline: "Naši zákazníci"
+    linkText: "a další"
+    linkUrl: "/o-nas#reference"
+customer1:
+    img: "/images/logo-cola.png"
+    alt: "Logo Coca-Cola HBC Česko a Slovensko"
+customer2:
+    img: "/images/logo-prazskateplarenska.png"
+    alt: "Logo Pražská teplárenská"
+customer3:
+    img: "/images/logo-skanska.png"
+    alt: "Logo SKANSKA"
 ---

@@ -1,5 +1,17 @@
 module.exports = (config) => {
-    // Returns a collection of all updates
+    // PLUGINS
+    const markdownIt = require("markdown-it");
+
+    // create a new markdown-it instance with the plugin
+    const markdownItAnchor = require("markdown-it-anchor");
+    const markdownLib = markdownIt({ html: true }).use(markdownItAnchor);
+
+    config.setLibrary("md", markdownLib);
+
+    // PASSTHROUGH
+    config.addPassthroughCopy("./src/images/");
+
+    // COLLECTIONS
     config.addCollection("updates", (collection) => {
         return [
             ...collection.getFilteredByGlob("./src/updates/*.md").reverse(),
