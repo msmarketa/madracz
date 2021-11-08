@@ -1,0 +1,16 @@
+<header>
+    <div>
+        <span>{{ contact.phone }}</span>
+        <span>{{ contact.email }}</span>
+    </div>
+    <nav>
+        {% include "partials/logo.svg" %}
+        {% for link in navigation.links %}
+        <ul>
+            <li>
+                <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+        </ul>
+        {% endfor %}
+    </nav>
+</header>

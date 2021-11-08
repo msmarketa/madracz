@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<h1>{{ hero.headline }}</h1>
+<div class="home__subheadline">
+    {{ hero.subheadline }}
+</div>
+
+{% set cardContent = cardOne %}
+{% include "partials/card.html" %}
+
+{% set cardContent = cardTwo %}
+{% include "partials/card.html" %}
+
+{% set cardContent = cardThree %}
+{% include "partials/card.html" %}
+
+{% endblock %}

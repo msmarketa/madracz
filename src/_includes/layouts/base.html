@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    {% include "partials/site-header.html" %}
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+<footer>
+    <div>
+        {{ contact.name }}<br>
+        {{ contact.street }}<br>
+        {{ contact.city }}<br><br>
+        {{ contact.phone }}<br>
+        {{ contact.email }}<br><br>
+        {{ contact.file }}
+    </div>
+    <nav>
+        {% for link in navigation.links %}
+        <ul>
+            <li>
+                <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+        </ul>
+        {% endfor %}
+    </nav>
+</footer>
+
+</html>

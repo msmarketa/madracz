@@ -1,0 +1,9 @@
+{% if cardContent %}
+{% set card = cardContent %}
+{% endif %}
+
+<section>
+    <h2>{{ card.title}}</h2>
+    <p>{{ card.content }}</p>
+    <a href="{{ card.linkUrl }}">{{ card.linkText }}</a>
+</section>
