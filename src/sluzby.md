@@ -1,6 +1,6 @@
 ---
-title: "Sluzby"
+title: "Služby"
 layout: "layouts/page.html"
 ---
 
-vsechny sluzby
+## Prodej hutního materiálu a součástí potrubí
