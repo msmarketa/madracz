@@ -1,0 +1,6 @@
+<h2>Novinky</h2>
+{% for update in collections.latestUpdates %}
+<h3>{{ update.data.title }}</h3>
+<p>{{ update.data.content }}</p>
+<time datetime="{{ update.data.date }}">{{ update.data.date }}</time>
+{% endfor %}

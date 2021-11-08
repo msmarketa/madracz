@@ -1,0 +1,10 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<h1>Všechny novinky</h1>
+{% for update in collections.updates %}
+<h2>{{ update.data.title }}</h2>
+<p>{{ update.data.content }}</p>
+<time datetime="{{ update.data.date }}">{{ update.data.date }}</time>
+{% endfor %}
+{% endblock %}

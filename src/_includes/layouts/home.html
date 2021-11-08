@@ -15,4 +15,8 @@
 {% set cardContent = cardThree %}
 {% include "partials/card.html" %}
 
+{% if collections.latestUpdates %}
+{% include "partials/latest-updates.html" %}
+{% endif %}
+
 {% endblock %}
