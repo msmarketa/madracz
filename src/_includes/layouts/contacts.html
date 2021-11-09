@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<h2>{{ regOffice }}</h2>
+<p>{{ contact.street }}
+    <br>{{ contact.city }}
+</p>
+
+<h2>{{ hours }}</h2>
+<ul>
+    {% for day in contact.hours %}
+    <li>{{ day }}</li>
+    {% endfor %}
+</ul>
+
+<h2>{{ phone }}</h2>
+<ul>
+    <li>{{ contact.phoneMain }}</li>
+    {% for num in contact.phoneOthers %}
+    <li>{{ num }}</li>
+    {% endfor %}
+</ul>
+<h2>{{ email }}</h2>
+<p>{{ contact.email }}</p>
+{% endblock %}

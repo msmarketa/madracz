@@ -1,6 +1,6 @@
 ---
 title: "Příruby"
-image: "images/priruby.jpeg"
+image: "/images/priruby.jpeg"
 types:
     - item: "Krková příruba přivařovací"
       standard: "ČSN131160, ČSN131229-131237"

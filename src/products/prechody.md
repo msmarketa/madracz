@@ -1,6 +1,6 @@
 ---
 title: "Přechody"
-image: "images/prechody.jpeg"
+image: "/images/prechody.jpeg"
 types:
     - item: "Přechod přímý a jednostranný - provedení bezešvé"
       standard: "ČSN132380, ČSN EN10253-1"

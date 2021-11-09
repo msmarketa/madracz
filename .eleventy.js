@@ -29,9 +29,7 @@ module.exports = (config) => {
     });
 
     config.addCollection("products", (collection) => {
-        return [
-            ...collection.getFilteredByGlob("./src/products/*.md").reverse(),
-        ];
+        return [...collection.getFilteredByGlob("./src/products/*.md")];
     });
 
     return {

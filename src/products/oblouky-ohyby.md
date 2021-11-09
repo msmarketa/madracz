@@ -1,6 +1,6 @@
 ---
 title: "Oblouky a ohyby"
-image: "images/ohyby.jpeg"
+image: "/images/ohyby.jpeg"
 types:
     - item: "Oblouk bezešvý"
       standard: "VN425760, DIN2605, ANSI B16.9"

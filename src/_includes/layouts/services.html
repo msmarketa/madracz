@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<h2>{{ headline }}</h2>
+
+{% include "partials/pipeline-systems.html" %}
+{% include "partials/metal-products.html" %}
+
+{{ content | safe }}
+{% endblock %}

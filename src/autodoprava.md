@@ -22,3 +22,11 @@ Dopravu našeho materiálu převezeme v regionu zdarma, při větší vzdálenos
 -   Doprava našeho materiálu
 -   Přeprava všech druhů nákladu po celé Evropě
 -   Speciální a nadrozměrné přepravy
+
+### Kontakt
+
+-   +420 602 317 880 (p. Dragoun)
+-   +420 315 722 002 (p. Šimáček)
+-   +420 315 722 457 (p. Šimáček)
+-   [doprava@madra.cz](mailto:doprava@madra.cz)
+-   [cargo@madra.cz](mailto:cargo@madra.cz)

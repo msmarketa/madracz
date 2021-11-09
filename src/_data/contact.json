@@ -3,7 +3,25 @@
     "street": "Lannova 2061/8",
     "city": "110 00 Praha 1",
     "url": "https://madra.cz",
-    "phone": "+420 315 722 002",
+    "phoneMain": "+420 315 722 002",
+    "phoneOthers": [
+        "+420 315 722 457",
+        "+420 602 317 880",
+        "+420 724 291 870",
+        "+420 602 390 588",
+        "+420 736 643 466"
+    ],
     "email": "madra@madra.cz",
-    "file": "C 312657 vedená u Městského soudu v Praze"
+    "file": "C 312657 vedená u Městského soudu v Praze",
+    "warehouse": {
+        "street": "Dobrovského 218",
+        "city": "278 01 Kralupy nad Vltavou"
+    },
+    "hours": [
+        "Pondělí: 7:00 – 15:30",
+        "Úterý: 7:00 – 15:30",
+        "Středa: 7:00 – 15:30",
+        "Čtvrtek: 7:00 – 17:00",
+        "Pátek: 7:00 – 15:00"
+    ]
 }

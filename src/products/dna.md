@@ -1,6 +1,6 @@
 ---
 title: "Dna"
-image: "images/dna.jpeg"
+image: "/images/dna.jpeg"
 types:
     - item: "Dno deskové přivařovací"
       standard: "ČSN 131811"

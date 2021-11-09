@@ -1,6 +1,6 @@
 ---
 title: "Ocelové trubky"
-image: "images/trubky.jpeg"
+image: "/images/trubky.jpeg"
 types:
     - item: "Trubka ocelová závitová běžná"
       standard: "ČSN 425710"

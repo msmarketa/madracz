@@ -1,6 +1,6 @@
 ---
 title: "T kusy"
-image: "images/tkusy.jpeg"
+image: "/images/tkusy.jpeg"
 types:
     - item: "Tvarovky T 90° svařované se stejnými a nestejnými hrdly"
       standard: "ON132212"
