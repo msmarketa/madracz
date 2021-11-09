@@ -6,22 +6,17 @@
     {{ hero.subheadline }}
 </div>
 
-{% set cardContent = cardOne %}
+{% for card in cards %}
+{% set cardContent = card %}
 {% include "partials/card.html" %}
-
-{% set cardContent = cardTwo %}
-{% include "partials/card.html" %}
-
-{% set cardContent = cardThree %}
-{% include "partials/card.html" %}
+{% endfor %}
 
 <div>
     <h3>{{ quality.headline }}</h3>
     <ul>
-        <li>{{ quality.item1 }}</li>
-        <li>{{ quality.item2 }}</li>
-        <li>{{ quality.item3 }}</li>
-        <li>{{ quality.item4 }}</li>
+        {% for item in quality.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
     </ul>
     <a href="{{ quality.linkUrl }}">{{ quality.linkText }}</a>
 </div>
@@ -32,8 +27,9 @@
 
 <div>
     <h2>{{ customers.headline }}</h2>
-    <img src="{{ customer1.img }}" alt="{{ customer1.alt }}"><img src="{{ customer2.img }}"
-        alt="{{ customer2.alt }}"><img src="{{ customer3.img }}" alt="{{ customer3.alt }}">
+    {% for reference in references %}
+    <img src="{{ reference.img }}" alt="{{ reference.alt }}">
+    {% endfor %}
     <a href="{{ customers.linkUrl }}">{{ customers.linkText }}</a>
 </div>
 

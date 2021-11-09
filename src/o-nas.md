@@ -57,10 +57,10 @@ Víme, že včasnost, přesnost, kvalita a cena dodávek je hlavním měřítkem
 -   **LOVOCHEMIE a.s.** - údržba a rekonstrukce provozu Lovosice
 -   **KAUČUK a.s.** - údržba a rekonstrukce provozu
 -   **UNIMONTEX s.r.o.** - údržba a rekonstrukce provozu
--   **Chemopetrol** - Chemtez a.s. - údržba a rekonstrukce provozu
+-   **Chemopetrol - Chemtez a.s.** - údržba a rekonstrukce provozu
 -   Chemopetrol - Pentar Horní Slavkov
 -   K-Protos, a.s. Kralupy n. Vlt.
--   Procter&Gambel Rakovník
+-   Procter&Gamble Rakovník
 -   IPS divize 3 Praha
 -   Unilever ČR Nelahozeves
 -   AUTECH Kladno
