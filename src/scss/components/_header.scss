@@ -3,7 +3,7 @@
     color: $color-white;
 
     &__contact {
-        max-width: 90rem;
+        max-width: 75rem;
         display: flex;
         justify-content: flex-end;
         padding: $spacing-sm;
@@ -18,7 +18,7 @@
         background-color: $color-secondary;
 
         &-content {
-            max-width: 90rem;
+            max-width: 75rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
