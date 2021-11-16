@@ -1,3 +1,7 @@
+////////////////////
+// FONTS
+////////////////////
+
 /* ubuntu-regular - latin */
 @font-face {
     font-family: "Ubuntu";
@@ -47,31 +51,37 @@
         url("../fonts/ubuntu-v15-latin-700italic.woff") format("woff");
 }
 
-html {
-    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
-        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol";
-}
+$font-body: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+$font-heading: "Ubuntu", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+$base-font-size: 1rem;
+$base-line-height: 1.8;
 
-body {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: $color-dark-grey;
-}
+////////////////////
+// COLORS
+////////////////////
 
-h1,
-h2,
-h3 {
-    font-family: "Ubuntu", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
-        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol";
-    color: $color-primary;
-}
+$color-primary: #003164;
+$color-primary-lighter: #0b5bb1;
+$color-secondary: #fdc502;
+$color-secondary-lighter: #ffdd60;
+$color-secondary-darker: #9d7a12;
 
-a {
-    color: $color-primary;
+$color-light-grey: #f2f2f2;
+$color-medium-grey: #aaaaaa;
+$color-dark-grey: #54595f;
 
-    &:hover {
-        color: $color-secondary;
-    }
-}
+$color-white: #ffffff;
+$color-black: #000000;
+
+////////////////////
+// SPACING
+////////////////////
+$spacing-unit: 0.5rem;
+$spacing-xs: $spacing-unit;
+$spacing-md: $spacing-unit * 2;
+$spacing-lg: $spacing-unit * 3;
+$spacing-xl: $spacing-unit * 4;

@@ -1,11 +1,6 @@
-@import "variables";
-@import "typography";
+@import "settings";
+@import "generic";
+@import "elements";
 
 // COMPONENTS
 @import "components/button";
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}

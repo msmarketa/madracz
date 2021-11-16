@@ -1,14 +1,25 @@
 .btn {
-    padding: 0.5rem 1rem;
+    padding: $spacing-xs $spacing-md;
     border-radius: 4px;
     text-decoration: none;
+    transition: all 0.3s;
 
     &--primary {
         color: $color-white;
         background-color: $color-primary;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary-lighter;
+        }
     }
 
     &--secondary {
         background-color: $color-secondary;
+
+        &:hover {
+            background-color: $color-secondary-lighter;
+            color: $color-dark-grey;
+        }
     }
 }
