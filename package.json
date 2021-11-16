@@ -11,6 +11,7 @@
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
+        "concurrently": "^6.4.0",
         "dart-sass": "^1.25.0",
         "gulp": "^4.0.2",
         "gulp-csso": "^4.0.1",

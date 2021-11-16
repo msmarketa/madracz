@@ -65,4 +65,13 @@ h3 {
     font-family: "Ubuntu", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
         "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol";
+    color: $color-primary;
+}
+
+a {
+    color: $color-primary;
+
+    &:hover {
+        color: $color-secondary;
+    }
 }
