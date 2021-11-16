@@ -1,0 +1,11 @@
+@import "variables";
+@import "typography";
+
+// COMPONENTS
+@import "components/button";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

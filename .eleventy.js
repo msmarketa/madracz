@@ -1,4 +1,7 @@
 module.exports = (config) => {
+    // WATCH TARGETS
+    config.addWatchTarget("./src/scss/**/*.scss");
+
     // PLUGINS
     const markdownIt = require("markdown-it");
 
@@ -10,6 +13,7 @@ module.exports = (config) => {
 
     // PASSTHROUGH
     config.addPassthroughCopy("./src/images/");
+    config.addPassthroughCopy("./src/fonts/");
 
     // COLLECTIONS
     config.addCollection("updates", (collection) => {

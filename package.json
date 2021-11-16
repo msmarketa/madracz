@@ -5,12 +5,18 @@
     "main": "index.js",
     "scripts": {
         "write": "npx @11ty/eleventy",
-        "serve": "npx @11ty/eleventy --serve"
+        "start": "concurrently \"npx eleventy --serve\" \"npx gulp develop\""
     },
     "author": "msmarketa",
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
-        "markdown-it-anchor": "^8.4.1"
+        "dart-sass": "^1.25.0",
+        "gulp": "^4.0.2",
+        "gulp-csso": "^4.0.1",
+        "gulp-dart-sass": "^1.0.2",
+        "gulp-sourcemaps": "^3.0.0",
+        "markdown-it-anchor": "^8.4.1",
+        "sass": "^1.43.4"
     }
 }
