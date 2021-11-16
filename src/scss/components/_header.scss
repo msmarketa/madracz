@@ -1,0 +1,39 @@
+.header {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &__contact {
+        max-width: 90rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: $spacing-sm;
+        font-size: $font-size-smaller;
+
+        &-item {
+            margin-right: $spacing-md;
+        }
+    }
+
+    &__navigation {
+        background-color: $color-secondary;
+
+        &-content {
+            max-width: 90rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: $spacing-sm;
+        }
+
+        &-item {
+            display: inline;
+            margin-left: $spacing-md;
+            margin-right: $spacing-md;
+            text-transform: uppercase;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
