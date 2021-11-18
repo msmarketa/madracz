@@ -1,39 +1,49 @@
 .header {
     background-color: $color-primary;
     color: $color-white;
+}
 
-    &__contact {
+.contact {
+    max-width: 75rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: $font-size-smaller;
+
+    &-item {
+        margin-left: $spacing-md;
+    }
+}
+
+.navigation {
+    background-color: $color-secondary;
+
+    &-content {
         max-width: 75rem;
         display: flex;
-        justify-content: flex-end;
-        padding: $spacing-sm;
-        font-size: $font-size-smaller;
-
-        &-item {
-            margin-right: $spacing-md;
-        }
+        justify-content: space-between;
     }
 
-    &__navigation {
-        background-color: $color-secondary;
+    &-logo {
+        padding-top: $spacing-sm;
+        padding-bottom: $spacing-sm;
+        font-size: 0;
+    }
 
-        &-content {
-            max-width: 75rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: $spacing-sm;
-        }
+    &-links {
+        display: flex;
+    }
 
-        &-item {
-            display: inline;
-            margin-left: $spacing-md;
-            margin-right: $spacing-md;
-            text-transform: uppercase;
+    &-link {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-left: $spacing-sm;
+        padding-right: $spacing-sm;
 
-            a {
-                text-decoration: none;
-            }
+        &:hover {
+            background-color: $color-primary;
+            color: $color-secondary;
         }
     }
 }
