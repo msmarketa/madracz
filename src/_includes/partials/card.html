@@ -2,8 +2,9 @@
 {% set card = cardContent %}
 {% endif %}
 
-<section>
-    <h2>{{ card.title}}</h2>
-    <p>{{ card.content }}</p>
-    <a href="{{ card.linkUrl }}" class="btn btn--primary">{{ card.linkText }}</a>
-</section>
+<div class="card">
+    <img src="https://satyr.dev/500" class="card__image" alt="">
+    <h2 class="card__headline">{{ card.title}}</h2>
+    <p class="card__description">{{ card.content }}</p>
+    <a href="{{ card.linkUrl }}" class="btn btn--primary card__btn">{{ card.linkText }}</a>
+</div>

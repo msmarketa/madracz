@@ -83,7 +83,8 @@ $color-black: #000000;
 ////////////////////
 // SPACING
 ////////////////////
-$spacing-unit: 0.5rem;
+$spacing-unit: 1rem;
+$spacing-xs: $spacing-unit / 2;
 $spacing-sm: $spacing-unit;
 $spacing-md: $spacing-unit * 2;
 $spacing-lg: $spacing-unit * 3;

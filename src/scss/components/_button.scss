@@ -1,7 +1,12 @@
 .btn {
-    padding: $spacing-sm $spacing-md;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
     border-radius: 4px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: smaller;
     transition: all 0.3s;
 
     &--primary {

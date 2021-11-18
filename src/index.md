@@ -3,10 +3,10 @@ title: "Hutní materiály, součásti potrubí a autodoprava | MADRA.cz"
 layout: "layouts/home.html"
 hero:
     headline: "Hutní materiály & součásti potrubí"
-    subheadline: "Zajišťujeme kompletní dodávky potrubních rozvodů a hutních materiálů od tradičních českých výrobců a prověřených zahraničních partnerů."
+    subheadline: "Zajišťujeme kompletní dodávky potrubních rozvodů a hutních materiálů od tradičních českých výrobců a prověřených zahraničních partnerů."
 cards:
     - title: "Potrubní rozvody"
-      content: "Kompletní sortiment potrubních rozvodů a největší výběr oblouků a ohybů skladem v České republice."
+      content: "Kompletní sortiment potrubních rozvodů a největší výběr oblouků a ohybů skladem v České republice."
       linkText: "Více"
       linkUrl: "#"
     - title: "Hutní materiály"

@@ -1,0 +1,25 @@
+.card {
+    padding: $spacing-sm $spacing-sm;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid $color-light-grey;
+    box-shadow: 0 8px 16px $color-light-grey;
+
+    &__image {
+        border-bottom: 5px solid $color-secondary;
+    }
+
+    &__headline {
+        margin-top: 0;
+        padding-top: $spacing-sm;
+    }
+
+    &__description {
+        line-height: 1.4;
+        margin-bottom: $spacing-lg;
+    }
+
+    &__btn {
+        margin-bottom: $spacing-xs;
+    }
+}

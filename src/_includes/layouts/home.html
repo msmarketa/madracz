@@ -6,10 +6,12 @@
     {{ hero.subheadline }}
 </div>
 
-{% for card in cards %}
-{% set cardContent = card %}
-{% include "partials/card.html" %}
-{% endfor %}
+<section class="grid-3">
+    {% for card in cards %}
+    {% set cardContent = card %}
+    {% include "partials/card.html" %}
+    {% endfor %}
+</section>
 
 <div>
     <h3>{{ quality.headline }}</h3>
