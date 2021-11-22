@@ -18,24 +18,9 @@
     </main>
 </body>
 
-<footer>
-    <div>
-        {{ contact.name }}<br>
-        {{ contact.street }}<br>
-        {{ contact.city }}<br><br>
-        {{ contact.phoneMain }}<br>
-        {{ contact.email }}<br><br>
-        {{ contact.file }}
-    </div>
-    <nav>
-        {% for link in navigation.links %}
-        <ul>
-            <li>
-                <a href="{{ link.url }}">{{ link.text }}</a>
-            </li>
-        </ul>
-        {% endfor %}
-    </nav>
-</footer>
+<div class="bg-primary">
+    {% include "partials/footer.html" %}
+</div>
+
 
 </html>

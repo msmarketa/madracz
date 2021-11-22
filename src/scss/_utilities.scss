@@ -2,3 +2,19 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.text-secondary {
+    color: $color-secondary;
+}
+
+.fw-medium {
+    font-weight: 600;
+}
+
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.mb-xs {
+    margin-bottom: $spacing-xs;
+}
