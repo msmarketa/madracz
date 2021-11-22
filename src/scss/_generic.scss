@@ -375,11 +375,5 @@ svg {
 }
 
 main {
-    max-width: 60rem;
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    column-gap: $spacing-md;
+    max-width: $screen-medium;
 }

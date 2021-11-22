@@ -4,9 +4,11 @@
 }
 
 .contact {
-    max-width: 75rem;
+    max-width: $screen-wide;
     display: flex;
     justify-content: flex-end;
+    padding-top: $spacing-xs;
+    padding-bottom: $spacing-xs;
     font-size: $font-size-smaller;
 
     &-item {
@@ -18,19 +20,20 @@
     background-color: $color-secondary;
 
     &-content {
-        max-width: 75rem;
+        max-width: $screen-wide;
         display: flex;
         justify-content: space-between;
     }
 
     &-logo {
-        padding-top: $spacing-sm;
-        padding-bottom: $spacing-sm;
+        padding-top: $spacing-xs;
+        padding-bottom: $spacing-xs;
         font-size: 0;
     }
 
     &-links {
         display: flex;
+        font-size: $font-size-smaller;
     }
 
     &-link {

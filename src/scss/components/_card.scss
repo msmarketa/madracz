@@ -11,12 +11,14 @@
     }
 
     &__headline {
+        font-size: $font-size-base;
         margin-top: 0;
         padding-top: $spacing-sm;
     }
 
     &__description {
         line-height: 1.4;
+        font-size: $font-size-smaller;
         margin-bottom: $spacing-lg;
     }
 
