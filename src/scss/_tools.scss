@@ -1,0 +1,51 @@
+$spacing: (
+    "xs": $spacing-xs,
+    "sm": $spacing-sm,
+    "md": $spacing-md,
+    "lg": $spacing-lg,
+    "xl": $spacing-xl,
+);
+
+@each $size, $value in $spacing {
+    .ml-#{$size} {
+        margin-left: #{$value};
+    }
+
+    .mr-#{$size} {
+        margin-right: #{$value};
+    }
+    .mt-#{$size} {
+        margin-top: #{$value};
+    }
+
+    .mb-#{$size} {
+        margin-bottom: #{$value};
+    }
+
+    .pl-#{$size} {
+        padding-left: #{$value};
+    }
+
+    .pr-#{$size} {
+        padding-right: #{$value};
+    }
+    .pt-#{$size} {
+        padding-top: #{$value};
+    }
+
+    .pb-#{$size} {
+        padding-bottom: #{$value};
+    }
+}
+
+$screen-width: (
+    "wide": $screen-wide,
+    "medium": $screen-medium,
+    "narrow": $screen-narrow,
+);
+
+@each $width, $value in $screen-width {
+    .s-#{$width} {
+        max-width: #{$value};
+    }
+}
