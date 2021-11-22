@@ -9,7 +9,6 @@
     justify-content: flex-end;
     padding-top: $spacing-xs;
     padding-bottom: $spacing-xs;
-    font-size: $font-size-smaller;
 
     &-item {
         margin-left: $spacing-md;
@@ -31,14 +30,13 @@
         font-size: 0;
 
         svg {
-            width: 10rem;
+            width: 12rem;
             height: auto;
         }
     }
 
     &-links {
         display: flex;
-        font-size: $font-size-smaller;
     }
 
     &-link {
