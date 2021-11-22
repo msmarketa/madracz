@@ -1,13 +1,19 @@
 .card {
     margin-top: $spacing-sm;
-    padding: $spacing-sm $spacing-md;
     text-align: center;
     border-radius: 4px;
     border: 1px solid $color-light-grey;
     box-shadow: 0 8px 16px $color-light-grey;
+    overflow: hidden;
 
     &__image {
         border-bottom: 5px solid $color-secondary;
+        width: 100%;
+        height: auto;
+    }
+
+    &__info {
+        padding: $spacing-sm $spacing-md;
     }
 
     &__headline {

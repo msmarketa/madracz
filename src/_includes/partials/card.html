@@ -3,8 +3,10 @@
 {% endif %}
 
 <div class="card">
-    <img src="https://satyr.dev/500" class="card__image" alt="">
-    <h2 class="card__headline">{{ card.title}}</h2>
-    <p class="card__description">{{ card.content }}</p>
-    <a href="{{ card.linkUrl }}" class="btn btn--primary card__btn">{{ card.linkText }}</a>
+    <img src="http://satyr.dev/768x16:9" class="card__image" alt="">
+    <div class="card__info">
+        <h2 class="card__headline">{{ card.title}}</h2>
+        <p class="card__description">{{ card.content }}</p>
+        <a href="{{ card.linkUrl }}" class="btn btn--primary card__btn">{{ card.linkText }}</a>
+    </div>
 </div>

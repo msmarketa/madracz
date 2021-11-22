@@ -29,6 +29,11 @@
         padding-top: $spacing-xs;
         padding-bottom: $spacing-xs;
         font-size: 0;
+
+        svg {
+            width: 10rem;
+            height: auto;
+        }
     }
 
     &-links {
