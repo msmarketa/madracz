@@ -1,10 +1,33 @@
 .hero {
-    background-image: url("/images/hero-img.jpg");
+    background-image: linear-gradient(
+            rgba($color-black, 0.2),
+            rgba($color-black, 0.7),
+            rgba($color-primary, 1)
+        ),
+        url("/images/hero-img.jpg");
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
     min-height: 20rem;
+    position: relative;
 
     &__content {
+        margin-top: 5rem;
         text-align: center;
+        z-index: 100;
+    }
+
+    &__headline {
+        font-size: $font-size-larger;
+        color: $color-secondary;
+        text-shadow: 1px 1px 4px $color-black;
+    }
+
+    &__subheadline {
+        color: $color-white;
+        font-size: $font-size-medium;
+        line-height: $line-height-medium;
+        text-shadow: 1px 1px 4px $color-black;
+        margin-bottom: 5rem;
     }
 }

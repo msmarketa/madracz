@@ -39,9 +39,10 @@ $spacing: (
 }
 
 $screen-width: (
-    "wide": $screen-wide,
+    "xlarge": $screen-xlarge,
+    "large": $screen-large,
     "medium": $screen-medium,
-    "narrow": $screen-narrow,
+    "small": $screen-small,
 );
 
 @each $width, $value in $screen-width {

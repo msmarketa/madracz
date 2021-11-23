@@ -60,8 +60,11 @@ $font-heading: "Ubuntu", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
 
 $font-size-base: 1rem;
 $font-size-smaller: 0.8rem;
+$font-size-medium: 1.3rem;
+$font-size-larger: 2.8rem;
 
 $line-height-base: 1.8;
+$line-height-medium: 1.2;
 
 ////////////////////
 // COLORS
@@ -90,6 +93,7 @@ $spacing-md: $spacing-unit * 3;
 $spacing-lg: $spacing-unit * 4;
 $spacing-xl: $spacing-unit * 5;
 
-$screen-wide: 70rem;
+$screen-xlarge: 80rem;
+$screen-large: 70rem;
 $screen-medium: 60rem;
-$screen-narrow: 50rem;
+$screen-small: 50rem;

@@ -1,10 +1,10 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<section class="hero">
+<section class="hero d-root">
     <div class="hero__content s-medium m-auto">
-        <h1>{{ hero.headline }}</h1>
-        <div class="home__subheadline">
+        <h1 class="hero__headline">{{ hero.headline }}</h1>
+        <div class="hero__subheadline s-small m-auto">
             {{ hero.subheadline }}
         </div>
         <div class="grid-3">
@@ -14,10 +14,9 @@
             {% endfor %}
         </div>
     </div>
-
 </section>
 
-<section class="bg-primary">
+<section class="bg-primary d-root">
     <div class="s-medium m-auto">
         <h2>{{ quality.headline }}</h2>
         <ul>
@@ -25,11 +24,11 @@
             <li>{{ item }}</li>
             {% endfor %}
         </ul>
-        <a href="{{ quality.linkUrl }}">{{ quality.linkText }}</a>
+        <a href="{{ quality.linkUrl }}" class="btn btn--secondary">{{ quality.linkText }}</a>
     </div>
 </section>
 
-<section class="s-medium m-auto">
+<section class="s-medium m-auto d-root">
     {% if collections.latestUpdates %}
     {% include "partials/latest-updates.html" %}
     {% endif %}

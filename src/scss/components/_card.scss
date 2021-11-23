@@ -3,8 +3,14 @@
     text-align: center;
     background-color: $color-white;
     border-radius: 4px;
-    box-shadow: 0 8px 16px $color-medium-grey;
+    box-shadow: 0 4px 10px rgba($color-black, 0.3);
     overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 0 15px 50px rgba($color-black, 0.5);
+        transform: translateY(-0.2rem);
+    }
 
     &__image {
         border-bottom: 5px solid $color-secondary;
@@ -24,9 +30,5 @@
     &__description {
         line-height: 1.4;
         margin-bottom: $spacing-xl;
-    }
-
-    &__btn {
-        margin-bottom: $spacing-xs;
     }
 }

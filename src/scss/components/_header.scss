@@ -4,7 +4,7 @@
 }
 
 .contact {
-    max-width: $screen-wide;
+    max-width: $screen-xlarge;
     display: flex;
     justify-content: flex-end;
     padding-top: $spacing-xs;
@@ -19,7 +19,7 @@
     background-color: $color-secondary;
 
     &-content {
-        max-width: $screen-wide;
+        max-width: $screen-xlarge;
         display: flex;
         justify-content: space-between;
     }
