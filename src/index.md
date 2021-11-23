@@ -9,14 +9,17 @@ cards:
       content: "Kompletní sortiment potrubních rozvodů a největší výběr oblouků a ohybů skladem v České republice."
       linkText: "Více"
       linkUrl: "#"
+      img: "/images/card-pipes.jpeg"
     - title: "Hutní materiály"
       content: "Široké spektrum hutního materiálu od tradičních českých výrobců a prověřených zahraničních partnerů."
       linkText: "Více"
       linkUrl: "#"
+      img: "/images/card-pipeline.jpeg"
     - title: "Autodoprava"
       content: "Zajišťujeme přepravy nákladů i osob, vytěžování vozidel a spediční služby po celé Evropě."
       linkText: "Více"
       linkUrl: "#"
+      img: "/images/card-truck.jpeg"
 quality:
     headline: "Kvalita od roku 1994"
     items:
