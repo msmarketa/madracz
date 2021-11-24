@@ -1,11 +1,14 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<h1>{{ title }}</h1>
-<h2>{{ headline }}</h2>
+<article class="s-medium m-auto mt-xxl mb-xl">
 
-{% include "partials/pipeline-systems.html" %}
-{% include "partials/metal-products.html" %}
+    <h1>{{ title }}</h1>
+    <h2>{{ headline }}</h2>
 
-{{ content | safe }}
+    {% include "partials/pipeline-systems.html" %}
+    {% include "partials/metal-products.html" %}
+
+    {{ content | safe }}
+</article>
 {% endblock %}

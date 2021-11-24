@@ -4,9 +4,14 @@ $spacing: (
     "md": $spacing-md,
     "lg": $spacing-lg,
     "xl": $spacing-xl,
+    "xxl": $spacing-xxl,
 );
 
 @each $size, $value in $spacing {
+    .m-#{$size} {
+        margin: #{$value};
+    }
+
     .ml-#{$size} {
         margin-left: #{$value};
     }
@@ -20,6 +25,10 @@ $spacing: (
 
     .mb-#{$size} {
         margin-bottom: #{$value};
+    }
+
+    .p-#{$size} {
+        padding: #{$value};
     }
 
     .pl-#{$size} {

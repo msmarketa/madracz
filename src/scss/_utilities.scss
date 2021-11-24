@@ -22,6 +22,9 @@
 .bg-secondary {
     background-color: $color-secondary;
 }
+.bg-light-grey {
+    background-color: $color-light-grey;
+}
 
 .fw-medium {
     font-weight: 600;
@@ -29,4 +32,8 @@
 
 .d-root {
     display: flow-root;
+}
+
+.w-fit {
+    width: fit-content;
 }
