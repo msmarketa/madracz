@@ -17,14 +17,16 @@
 </section>
 
 <section class="bg-primary d-root">
-    <div class="s-medium m-auto">
-        <h2>{{ quality.headline }}</h2>
-        <ul>
+    <div class="quality s-medium m-auto">
+        <div class="quality__cta">
+            <h2 class="quality__headline">{{ quality.headline }}</h2>
+            <a href="{{ quality.linkUrl }}" class="btn btn--secondary">{{ quality.linkText }}</a>
+        </div>
+        <ul class="quality__items">
             {% for item in quality.items %}
-            <li>{{ item }}</li>
+            <li class="quality__item"><span>{{ item }}</span></li>
             {% endfor %}
         </ul>
-        <a href="{{ quality.linkUrl }}" class="btn btn--secondary">{{ quality.linkText }}</a>
     </div>
 </section>
 
