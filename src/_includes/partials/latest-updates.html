@@ -1,6 +1,10 @@
-<h2>Novinky</h2>
+<h2 class="headline-underline">Novinky</h2>
 {% for update in collections.latestUpdates %}
-<h3>{{ update.data.title }}</h3>
-<p>{{ update.data.content }}</p>
-<time datetime="{{ update.data.date }}">{{ update.data.date }}</time>
+<div class="update">
+  <h3 class="update__headline">{{ update.data.title }}</h3>
+  <time class="update__date" datetime="{{ update.data.date }}">
+    {{ update.data.date }}
+  </time>
+  <p>{{ update.data.content }}</p>
+</div>
 {% endfor %}

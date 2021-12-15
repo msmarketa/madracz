@@ -1,3 +1,8 @@
-{% for item in collections["potrubni-rozvody"] %}
-<a href="#"><img src="{{ item.data.image }}" alt="{{ item.data.title }}">{{ item.data.title }}</a>
-{% endfor %}
+<div class="products">
+  {% for item in collections["potrubni-rozvody"] %}
+  <a href="#" class="product">
+    <img src="{{ item.data.image }}" alt="{{ item.data.title }}" />
+    <span class="product__title">{{item.data.title }}</span>
+  </a>
+  {% endfor %}
+</div>

@@ -1,8 +1,6 @@
-{% extends "layouts/base.html" %}
-
-{% block content %}
+{% extends "layouts/base.html" %} {% block content %}
 <article class="s-medium m-auto mt-xxl mb-xl">
-    <h1>{{ title }}</h1>
-    <p>{{ content | safe }}</p>
+  <h1 class="headline-underline">{{ title }}</h1>
+  <p>{{ content | safe }}</p>
 </article>
 {% endblock %}

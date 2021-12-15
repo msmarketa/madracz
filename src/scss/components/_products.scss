@@ -1,0 +1,24 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 1rem;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  background-color: $color-white;
+  border: 1px solid $color-light-grey;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba($color-medium-grey, 0.4);
+}
+
+.product__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
