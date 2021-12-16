@@ -1,8 +1,8 @@
-<div class="products">
+<div class="pipelines">
   {% for item in collections["potrubni-rozvody"] %}
-  <a href="#" class="product">
+  <a href="#" class="pipeline">
     <img src="{{ item.data.image }}" alt="{{ item.data.title }}" />
-    <span class="product__title">{{item.data.title }}</span>
+    <span class="pipeline__title">{{item.data.title }}</span>
   </a>
   {% endfor %}
 </div>

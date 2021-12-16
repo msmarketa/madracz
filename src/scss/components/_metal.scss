@@ -1,0 +1,32 @@
+.metal {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.metal__headline {
+  display: block;
+  text-transform: uppercase;
+  color: $color-secondary;
+  font-weight: 800;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $color-secondary;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+
+  &::before {
+    content: "▸";
+    position: relative;
+    margin-right: 0.5rem;
+  }
+}
+
+.metal__item--light {
+  color: $color-white;
+}
+
+.metal__item--dark {
+  color: $color-dark-grey;
+}

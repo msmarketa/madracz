@@ -1,13 +1,14 @@
-<ul>
-    {% for item in collections["hutni-material"] %}
-    <li>{{ item.data.title }}
-        {% if item.data.types %}
-        <ul>
-            {% for type in item.data.types %}
-            <li>{{ type }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-    </li>
-    {% endfor %}
+<ul class="metal">
+  {% for item in collections["hutni-material"] %}
+  <li>
+    <span class="metal__headline">{{ item.data.title }}</span>
+    {% if item.data.types %}
+    <ul>
+      {% for type in item.data.types %}
+      <li class="metal__item">{{ type }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
 </ul>

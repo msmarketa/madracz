@@ -1,10 +1,10 @@
-.products {
+.pipelines {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   grid-gap: 1rem;
 }
 
-.product {
+.pipeline {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -17,7 +17,7 @@
   box-shadow: 0 2px 8px rgba($color-medium-grey, 0.4);
 }
 
-.product__title {
+.pipeline__title {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 1rem;

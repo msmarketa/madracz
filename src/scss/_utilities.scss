@@ -45,12 +45,12 @@
 .headline-underline::after {
   content: "";
   display: block;
+  width: 2rem;
   height: 3px;
   background-color: $color-secondary;
 
   position: relative;
   top: 2rem;
   left: calc(50% - 1rem);
-  width: 2rem;
   margin-bottom: 5rem;
 }
