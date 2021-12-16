@@ -2,24 +2,33 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   grid-gap: 1rem;
+  color: $color-secondary;
+}
+
+.metal--primary {
+  color: $color-primary;
 }
 
 .metal__headline {
   display: block;
   text-transform: uppercase;
-  color: $color-secondary;
   font-weight: 800;
+  cursor: pointer;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid $color-secondary;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 
   &::before {
-    content: "▸";
+    content: "►";
     position: relative;
     margin-right: 0.5rem;
+  }
+
+  &.opened::before {
+    content: "▼";
   }
 }
 
@@ -29,4 +38,12 @@
 
 .metal__item--dark {
   color: $color-dark-grey;
+}
+
+.metal__list {
+  display: none;
+}
+
+.metal__headline + .metal__list.opened {
+  display: block;
 }

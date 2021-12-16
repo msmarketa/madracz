@@ -1,9 +1,9 @@
-<ul class="metal">
+<ul class="metal {% if '/sluzby' in page.url %}metal--primary{% endif %} mt-md">
   {% for item in collections["hutni-material"] %}
   <li>
     <span class="metal__headline">{{ item.data.title }}</span>
     {% if item.data.types %}
-    <ul>
+    <ul class="metal__list">
       {% for type in item.data.types %}
       <li class="metal__item">{{ type }}</li>
       {% endfor %}
