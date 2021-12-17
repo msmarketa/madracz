@@ -7,5 +7,3 @@ phone: "Telefon"
 email: "E-mail"
 layout: "layouts/contacts.html"
 ---
-
-Tady budou kontakty
