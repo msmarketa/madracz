@@ -4,8 +4,7 @@
     <h1 class="hero__headline">{{ hero.headline }}</h1>
     <div class="hero__subheadline s-small m-auto">{{ hero.subheadline }}</div>
     <div class="grid-3">
-      {% for card in cards %} {% set cardContent = card %} {% include
-      "partials/card.html" %} {% endfor %}
+      {% for card in cards %} {% set cardContent = card %} {% include "partials/card.html" %} {% endfor %}
     </div>
   </div>
 </section>
@@ -14,9 +13,7 @@
   <div class="quality s-medium m-auto">
     <div class="quality__cta">
       <h2 class="quality__headline">{{ quality.headline }}</h2>
-      <a href="{{ quality.linkUrl }}" class="btn btn--secondary"
-        >{{ quality.linkText }}</a
-      >
+      <a href="{{ quality.linkUrl }}" class="btn btn--secondary">{{ quality.linkText }}</a>
     </div>
     <ul class="quality__items">
       {% for item in quality.items %}
@@ -28,24 +25,24 @@
 
 <section class="bg-light-grey d-root">
   <div class="s-medium m-auto mt-xxl mb-xxl">
-    {% if collections.latestUpdates %} {% include
-    "partials/latest-updates.html"%} {% endif %}
+    {% if collections.latestUpdates %} {% include "partials/latest-updates.html"%} {% endif %}
   </div>
 </section>
 <section class="bg-primary d-root">
   <div class="s-medium m-auto mt-xxl mb-xxl">
     <h2 class="text-white headline-underline">{{ sortiment.headline }}</h2>
-    {% include "partials/pipeline-systems.html" %} {% include
-    "partials/metal-products.html" %}
+    {% include "partials/pipeline-systems.html" %} {% include "partials/metal-products.html" %}
   </div>
 </section>
 
-<div>
-  <h2>{{ customers.headline }}</h2>
-  {% for reference in references %}
-  <img src="{{ reference.img }}" alt="{{ reference.alt }}" />
-  {% endfor %}
-  <a href="{{ customers.linkUrl }}">{{ customers.linkText }}</a>
-</div>
+<section class="s-medium m-auto mt-xxl mb-xxl">
+  <div class="grid-3">
+    <h2 class="headline-underline grid-span-all">{{ customers.headline }}</h2>
+    {% for reference in references %}
+    <img class="reference__image" src="{{ reference.img }}" alt="{{ reference.alt }}" />
+    {% endfor %}
+    <a class="grid-span-all" href="{{ customers.linkUrl }}">{{ customers.linkText }}</a>
+  </div>
+</section>
 
 {% endblock %}
