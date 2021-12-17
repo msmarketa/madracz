@@ -1,18 +1,16 @@
 <header class="header">
-    <div class="contact m-auto">
-        <span class="contact-item">{{ contact.phoneMain }}</span>
-        <span class="contact-item">{{ contact.email }}</span>
+  <div class="header__contact m-auto">
+    <span class="header__contact-item">{{contact.phoneMain }}</span>
+    <span class="header__contact-item">{{ contact.email }}</span>
+  </div>
+  <nav class="navigation">
+    <div class="navigation-content m-auto">
+      <a href="/" class="navigation-logo"> {% include "partials/logo.svg" %} </a>
+      <div class="navigation-links">
+        {% for link in navigation.links %}
+        <a href="{{ link.url }}" class="navigation-link">{{ link.text }}</a>
+        {% endfor %}
+      </div>
     </div>
-    <nav class="navigation">
-        <div class="navigation-content m-auto">
-            <a href="/" class="navigation-logo">
-                {% include "partials/logo.svg" %}
-            </a>
-            <div class="navigation-links">
-                {% for link in navigation.links %}
-                <a href="{{ link.url }}" class="navigation-link">{{ link.text }}</a>
-                {% endfor %}
-            </div>
-        </div>
-    </nav>
+  </nav>
 </header>

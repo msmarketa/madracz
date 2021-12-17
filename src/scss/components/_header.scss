@@ -1,55 +1,55 @@
 .header {
-    background-color: $color-primary;
-    color: $color-white;
+  background-color: $color-primary;
+  color: $color-white;
 }
 
-.contact {
-    max-width: $screen-xlarge;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: $spacing-xs;
-    padding-bottom: $spacing-xs;
+.header__contact {
+  max-width: $screen-xlarge;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: $spacing-xs;
+  padding-bottom: $spacing-xs;
 
-    &-item {
-        margin-left: $spacing-md;
-    }
+  &-item {
+    margin-left: $spacing-md;
+  }
 }
 
 .navigation {
-    background-color: $color-secondary;
+  background-color: $color-secondary;
 
-    &-content {
-        max-width: $screen-xlarge;
-        display: flex;
-        justify-content: space-between;
+  &-content {
+    max-width: $screen-xlarge;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    padding-top: $spacing-xs;
+    padding-bottom: $spacing-xs;
+    font-size: 0;
+
+    svg {
+      width: 12rem;
+      height: auto;
     }
+  }
 
-    &-logo {
-        padding-top: $spacing-xs;
-        padding-bottom: $spacing-xs;
-        font-size: 0;
+  &-links {
+    display: flex;
+  }
 
-        svg {
-            width: 12rem;
-            height: auto;
-        }
+  &-link {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: $spacing-sm;
+    padding-right: $spacing-sm;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-secondary;
     }
-
-    &-links {
-        display: flex;
-    }
-
-    &-link {
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding-left: $spacing-sm;
-        padding-right: $spacing-sm;
-
-        &:hover {
-            background-color: $color-primary;
-            color: $color-secondary;
-        }
-    }
+  }
 }

@@ -14,3 +14,12 @@
   align-content: center;
   grid-gap: 2rem;
 }
+
+.contacts__list {
+  list-style-type: none;
+  padding: 0;
+}
+.contacts__map {
+  display: block;
+  border: 0;
+}
