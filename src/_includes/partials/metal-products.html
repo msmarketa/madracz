@@ -5,7 +5,7 @@
     {% if item.data.types %}
     <ul class="metal__list">
       {% for type in item.data.types %}
-      <li class="metal__item">{{ type }}</li>
+      <li class="metal__item {% if '/sluzby' in page.url %}metal__item--dark{% endif %}">{{ type }}</li>
       {% endfor %}
     </ul>
     {% endif %}

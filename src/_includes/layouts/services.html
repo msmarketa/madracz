@@ -1,10 +1,10 @@
 {% extends "layouts/base.html" %} {% block content %}
 <article class="s-medium m-auto mt-xxl mb-xl">
   <h1 class="headline-underline">{{ title }}</h1>
-  <h2>{{ headline }}</h2>
+  <h2 id="potrubni-rozvody">{{ headline }}</h2>
 
-  {% include "partials/pipeline-systems.html" %} {% include
-  "partials/metal-products.html" %}
+  {% include "partials/pipeline-systems.html" %}
+  <div id="hutni-materialy">{% include "partials/metal-products.html" %}</div>
 
   <div class="mt-xl">{{ content | safe }}</div>
 </article>

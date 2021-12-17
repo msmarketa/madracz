@@ -1,10 +1,13 @@
 .metal {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  grid-gap: 1rem;
+  height: auto;
+  column-count: 2;
   color: $color-secondary;
+}
+
+.metal > li:nth-of-type(3) {
+  break-after: column;
 }
 
 .metal--primary {
@@ -18,7 +21,6 @@
   cursor: pointer;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid $color-secondary;
-  margin-top: 1rem;
   margin-bottom: 0.5rem;
 
   &::before {
@@ -46,4 +48,6 @@
 
 .metal__headline + .metal__list.opened {
   display: block;
+  grid-row: span 2;
+  margin-bottom: 1rem;
 }
