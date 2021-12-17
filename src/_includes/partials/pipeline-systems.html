@@ -1,6 +1,6 @@
 <div class="pipelines">
-  {% for item in collections["potrubni-rozvody"] %}
-  <a href="#" class="pipeline">
+  {% for item in collections["potrubni-rozvody"] | sortByOrder %}
+  <a href="{{ item.url }}" class="pipeline">
     <img src="{{ item.data.image }}" alt="{{ item.data.title }}" />
     <span class="pipeline__title">{{item.data.title }}</span>
   </a>

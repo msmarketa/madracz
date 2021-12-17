@@ -24,16 +24,15 @@ module.exports = (config) => {
 
   // Returns a collection of the 3 latest updates sorted from newest to oldest
   config.addCollection("latestUpdates", (collection) => {
-    return [
-      ...collection
-        .getFilteredByGlob("./src/updates/*.md")
-        .reverse()
-        .slice(0, 3),
-    ];
+    return [...collection.getFilteredByGlob("./src/updates/*.md").reverse().slice(0, 3)];
   });
 
-  config.addCollection("products", (collection) => {
-    return [...collection.getFilteredByGlob("./src/products/*.md")];
+  config.addCollection("sortiment", (collection) => {
+    return [...collection.getFilteredByGlob("./src/sortiment/*.md")];
+  });
+
+  config.addFilter("sortByOrder", (values) => {
+    return values.sort((a, b) => b.data.order - a.data.order).reverse();
   });
 
   return {
