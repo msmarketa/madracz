@@ -1,30 +1,42 @@
 .btn {
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: $font-size-small;
-    transition: all 0.3s;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: $font-size-small;
+  transition: all 0.3s;
 
-    &--primary {
-        color: $color-white;
-        background-color: $color-primary;
+  &--primary {
+    color: $color-white;
+    background-color: $color-primary;
 
-        &:hover {
-            color: $color-white;
-            background-color: $color-primary-lighter;
-        }
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary-lighter;
     }
+  }
 
-    &--secondary {
-        background-color: $color-secondary;
+  &--secondary {
+    background-color: $color-secondary;
 
-        &:hover {
-            background-color: $color-secondary-lighter;
-            color: $color-dark-grey;
-        }
+    &:hover {
+      background-color: $color-secondary-lighter;
+      color: $color-dark-grey;
     }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      color: $color-secondary-darker;
+      border: 2px solid $color-secondary;
+    }
+  }
 }
