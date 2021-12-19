@@ -1,0 +1,13 @@
+.product__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.5rem;
+}
+
+.product__row:nth-of-type(2n + 2) {
+  background-color: $color-light-grey;
+}
+
+.product__standard {
+  justify-self: end;
+}

@@ -1,7 +1,15 @@
-{% extends "layouts/base.html" %}
-
-{% block content %}
-<h1>{{ title }}</h1>
-<p>Celý sortiment výrobků je dodáván v jakostních třídách 11, 15, 17 dle ČSN a také jejich ekvivalenty specifikované v
-    normách DIN a ANSI.</p>
+{% extends "layouts/base.html" %} {% block content %}
+<article class="s-medium m-auto mt-xxl mb-xxl">
+  <h1>{{ title }}</h1>
+  {% for type in types %}
+  <div class="product__row">
+    <span>{{ type.item }}</span>
+    <span class="product__standard">{{ type.standard }}</span>
+  </div>
+  {% endfor %}
+  <p class="mt-md">
+    Celý sortiment výrobků je dodáván v jakostních třídách 11, 15, 17 dle ČSN a také jejich ekvivalenty specifikované v
+    normách DIN a ANSI.
+  </p>
+</article>
 {% endblock %}
