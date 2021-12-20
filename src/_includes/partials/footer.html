@@ -1,20 +1,20 @@
 <footer class="footer">
-    <div>
-        <div class="text-secondary fw-medium mb-xs">{{ contact.name }}</div>
-        {{ contact.street }}<br>
-        {{ contact.city }}<br><br>
-        {{ contact.phoneMain }}<br>
-        {{ contact.email }}<br><br>
-        {{ contact.file }}
-    </div>
-    <nav>
-        <div class="text-secondary fw-medium mb-xs">MENU</div>
-        {% for link in navigation.links %}
-        <ul class="footer__navlist">
-            <li>
-                <a href="{{ link.url }}" class="footer__link">{{ link.text }}</a>
-            </li>
-        </ul>
-        {% endfor %}
-    </nav>
+  <div>
+    <div class="text-secondary fw-medium mb-xs">{{ contact.name }}</div>
+    {{ contact.street }}<br />
+    {{ contact.city }}<br /><br />
+    {{ contact.phoneMain }}<br />
+    {{ contact.email }}<br /><br />
+    {{ contact.file }}
+  </div>
+  <nav class="footer__nav">
+    <div class="text-secondary fw-medium mb-xs">MENU</div>
+    <ul class="footer__navlist">
+      {% for link in navigation.links %}
+      <li>
+        <a href="{{ link.url }}" class="footer__link">{{ link.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </footer>

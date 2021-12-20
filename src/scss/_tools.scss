@@ -1,61 +1,85 @@
 $spacing: (
-    "xs": $spacing-xs,
-    "sm": $spacing-sm,
-    "md": $spacing-md,
-    "lg": $spacing-lg,
-    "xl": $spacing-xl,
-    "xxl": $spacing-xxl,
+  "xs": $spacing-xs,
+  "sm": $spacing-sm,
+  "md": $spacing-md,
+  "lg": $spacing-lg,
+  "xl": $spacing-xl,
+  "xxl": $spacing-xxl,
 );
 
 @each $size, $value in $spacing {
-    .m-#{$size} {
-        margin: #{$value};
-    }
+  .m-#{$size} {
+    margin: #{$value};
+  }
 
-    .ml-#{$size} {
-        margin-left: #{$value};
-    }
+  .ml-#{$size} {
+    margin-left: #{$value};
+  }
 
-    .mr-#{$size} {
-        margin-right: #{$value};
-    }
-    .mt-#{$size} {
-        margin-top: #{$value};
-    }
+  .mr-#{$size} {
+    margin-right: #{$value};
+  }
+  .mt-#{$size} {
+    margin-top: #{$value};
+  }
 
-    .mb-#{$size} {
-        margin-bottom: #{$value};
-    }
+  .mb-#{$size} {
+    margin-bottom: #{$value};
+  }
 
-    .p-#{$size} {
-        padding: #{$value};
-    }
+  .p-#{$size} {
+    padding: #{$value};
+  }
 
-    .pl-#{$size} {
-        padding-left: #{$value};
-    }
+  .pl-#{$size} {
+    padding-left: #{$value};
+  }
 
-    .pr-#{$size} {
-        padding-right: #{$value};
-    }
-    .pt-#{$size} {
-        padding-top: #{$value};
-    }
+  .pr-#{$size} {
+    padding-right: #{$value};
+  }
+  .pt-#{$size} {
+    padding-top: #{$value};
+  }
 
-    .pb-#{$size} {
-        padding-bottom: #{$value};
-    }
+  .pb-#{$size} {
+    padding-bottom: #{$value};
+  }
 }
 
 $screen-width: (
-    "xlarge": $screen-xlarge,
-    "large": $screen-large,
-    "medium": $screen-medium,
-    "small": $screen-small,
+  "large": $screen-large,
+  "medium": $screen-medium,
+  "small": $screen-small,
 );
 
 @each $width, $value in $screen-width {
-    .s-#{$width} {
-        max-width: #{$value};
+  .s-#{$width} {
+    max-width: #{$value};
+  }
+}
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: 576px) {
+      @content;
     }
+  }
+
+  @if $breakpoint == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
 }

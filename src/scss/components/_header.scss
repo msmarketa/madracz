@@ -4,22 +4,18 @@
 }
 
 .header__contact {
-  max-width: $screen-xlarge;
+  max-width: $screen-large;
   display: flex;
   justify-content: flex-end;
-  padding-top: $spacing-xs;
-  padding-bottom: $spacing-xs;
-
-  &-item {
-    margin-left: $spacing-md;
-  }
+  gap: 1rem;
+  padding: $spacing-sm;
 }
 
 .navigation {
   background-color: $color-secondary;
 
   &-content {
-    max-width: $screen-xlarge;
+    max-width: $screen-large;
     display: flex;
     justify-content: space-between;
   }
@@ -36,7 +32,11 @@
   }
 
   &-links {
-    display: flex;
+    display: none;
+
+    @include breakpoint(md) {
+      display: flex;
+    }
   }
 
   &-link {
