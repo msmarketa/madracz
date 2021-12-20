@@ -8,7 +8,7 @@
       <a href="/" class="navigation-logo"> {% include "partials/logo.svg" %} </a>
       <div class="navigation-links">
         {% for link in navigation.links %}
-        <a href="{{ link.url }}" class="navigation-link">{{ link.text }}</a>
+        <a href="{{ link.url }}" class="navigation-link {{ 'active' if link.url === page.url }}">{{ link.text }}</a>
         {% endfor %}
       </div>
     </div>

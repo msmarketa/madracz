@@ -1,28 +1,28 @@
 {
-    "links": [
-        {
-            "text": "Úvod",
-            "url": "/"
-        },
-        {
-            "text": "O nás",
-            "url": "/o-nas/"
-        },
-        {
-            "text": "Služby",
-            "url": "/sluzby/"
-        },
-        {
-            "text": "Kvalita",
-            "url": "/kvalita/"
-        },
-        {
-            "text": "Autodoprava",
-            "url": "/autodoprava/"
-        },
-        {
-            "text": "Kontakt",
-            "url": "/kontakt/"
-        }
-    ]
+  "links": [
+    {
+      "text": "Úvod",
+      "url": "/"
+    },
+    {
+      "text": "O nás",
+      "url": "/o-nas/"
+    },
+    {
+      "text": "Služby",
+      "url": "/sluzby/"
+    },
+    {
+      "text": "Kvalita",
+      "url": "/kvalita/"
+    },
+    {
+      "text": "Autodoprava",
+      "url": "/autodoprava/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "/kontakt/"
+    }
+  ]
 }
